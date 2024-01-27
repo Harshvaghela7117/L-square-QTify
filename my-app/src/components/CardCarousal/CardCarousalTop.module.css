@@ -1,0 +1,27 @@
+.cardCarousalTop{
+    background-color: #121212;
+    height: 280px;
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+
+}
+
+.text{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.colortext{
+    color:#34C94B ;
+}
+
+.cardgrid{
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+}
+

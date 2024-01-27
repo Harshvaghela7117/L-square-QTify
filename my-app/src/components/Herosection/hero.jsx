@@ -7,7 +7,7 @@ export default function HeroSection(){
         <div className={styles.hero}>
             <div className={styles.herosub}>
                 <div className={styles.herotext} >
-                    <p> 100 Thousands Songs, ad-free</p> 
+                    <p>100 Thousand Songs, ad-free</p> 
                     <p>Over thousands podcast episodes </p> 
                 </div>
                     <img src={headPhones} height={212} width={212} alt="headphone" />
