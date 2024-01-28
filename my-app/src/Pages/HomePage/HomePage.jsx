@@ -7,7 +7,7 @@ import HeroSection from "../../components/Herosection/hero";
 export default function HomePage(){
     const {data} = useOutletContext();
     const {topAlbums, newAlbums, songs} = data  ;
-    // console.log(data);
+    console.log(data);
     // console.log(topAlbums);
     // console.log(newAlbums)
     return(
