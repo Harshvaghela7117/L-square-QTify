@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    /* color: #FFFFFF; */
 }
 
 .cardWrapper{
@@ -16,5 +17,5 @@
 
 .toggleText{
     cursor: pointer;
-    color:#34C94B
+    color:#34C94B;
 }

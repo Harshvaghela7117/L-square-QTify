@@ -43,9 +43,7 @@
     padding: 6px;
 }*/
 
-.wrapper{
-    width: 160px;
-}
+
 
 /* .titleWrapper{
     margin-top: 6px;
@@ -76,27 +74,62 @@
 
 } */
 
-.pill{
+/* .pill{
     font-size: 12px;
     background-color: #121212;
     width: max-content;
     padding: 6px;
     border-radius: 10px;
+} */
+.wrapper{
+    width: 160px;
+    /* background-color: #FFFFFF; */
 }
-
 .cardchip{
-    background-color: #121212;
-    color: #FFFFFF;
     margin-left: 6px;
-} 
-.chip{
+    margin-top: 6px;
     color: #FFFFFF;
     background-color: #121212;
-}
+}  
+
 .cardimg{
-    width: 159px;
+    width: 100%;
     height: 170px;
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    /* overflow: hidden; */
 }
+
+.abc{
+    height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+    text-align: left;    
+}
+/* .banner{
+    width: 100%;
+    height: 30px;
+    background-color: #FFFFFF;
+    color: #121212;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    .cardchip{
+        margin-left: 6px;
+        margin-top: 2px;
+        color: #FFFFFF;
+        background-color: #121212;
+    }
+} */
+
+.main{
+    background-color: #FFFFFF;
+    width: 159px;
+    height: 205px;
+    border-radius: 10px;
+    gap: 6px;
+}
+

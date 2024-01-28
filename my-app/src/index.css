@@ -37,8 +37,8 @@ body{
   font-family: "Poppins" , sans-serif ;
   line-height: 1.5;
   -webkit-font-smoothing : antialiased ;
-  background-color: var(--color-black);
-  color: var(--color-white);
+  background-color: #121212;
+  color: #FFFFFF;
   overflow: hidden;
 
 }

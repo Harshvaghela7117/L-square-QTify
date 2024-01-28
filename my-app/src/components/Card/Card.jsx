@@ -11,20 +11,21 @@ export default function Card({data,type}){
             case "album" : {
                 const {image, songs,slug ,follows, title} = data;
                 return(
-                    <>
-                    <Tooltip title={`${songs.length}`} placement="top" arrow>                     
-                        <Link to={`{/album/${slug}}`}>     
-                        <div className={styles.wrapper}>
-                            <div className={styles.main}>
-                                <img src={image}  className={styles.cardimg} alt="cardimg" loading="lazy" />
-                                <div className={styles.banner}>
-                                     <Chip className={styles.cardchip} label={`${follows} Follows`} size="small" />                
+                    <>  
+                        <Tooltip title={`${songs.length} songs`} placement="top" arrow>                     
+                            <Link to={`{/album/${slug}}`}>     
+                                <div className={styles.wrapper}>
+                                    <div className={styles.main}>
+                                        <img src={image}  className={styles.cardimg} alt="cardimg" loading="lazy" />
+                                        <div className={styles.banner}>
+                                        <Chip className={styles.cardchip}  label={`${follows} Follows`} size="small" />           
+                                            
+                                        </div>   
+                                    </div>           
+                                        <p className={styles.abc}>{title}</p>
                                 </div>
-                            </div>           
-                                <p className={styles.abc}>{title}</p>
-                        </div>
-                        </Link>                     
-                    </Tooltip>
+                            </Link>
+                        </Tooltip>
                     </>
                 )
             }
@@ -35,16 +36,19 @@ export default function Card({data,type}){
                     <div className={styles.wrapper}>
                         <div className={styles.main}>
                             <img src={image}  className={styles.cardimg} alt="cardimg" loading="lazy" />
+                            <div className={styles.banner}> 
                             <Chip className={styles.cardchip} label={likes} size="small" />                
+
+                            </div>
                         </div>           
                             <p className={styles.abc}>{title}</p>
                     </div>
                 </>
-                )
-                }                 
+                    )
+            }                 
             default:
                 return <></>
         }
     }
-    return  getCard(type)    
+    return  getCard(type)
 }

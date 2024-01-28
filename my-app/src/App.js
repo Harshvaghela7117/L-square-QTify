@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 
 
 function App() {
-  const [searchData,setSearchData] = useState();
+const [searchData,setSearchData] = useState();
   const [data,setData] = useState({});
 
   const generateData = (key, source) => {
@@ -33,9 +33,9 @@ function App() {
   const {topAlbums =[], newAlbums =[], songs = []}=data;
   return (
       <>
-        <div>
-          <Navbar />
-          <Outlet context={{data:{topAlbums, newAlbums, songs}}}/>
+<div>
+        <Navbar />
+<Outlet context={{data:{topAlbums, newAlbums, songs}}}/>
         </div>
       </>
   );
