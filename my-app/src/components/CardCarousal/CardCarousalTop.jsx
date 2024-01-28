@@ -10,26 +10,29 @@ export default function CardCarousalTop(){
                 <h5 className={styles.colortext}>Show all</h5>
             </div>
 
-            <Grid container spacing={2} >
-                <Grid item >
+            <Grid container spacing={21.5} >
+                <Grid item lg={1} >
                     <Card />
                 </Grid>
-                <Grid item>
+                <Grid item lg={1}>
                     <Card />
                 </Grid>
-                <Grid item>
+                <Grid item lg={1}>
                     <Card />
                 </Grid>
-                <Grid item>
+                <Grid item lg={1}>
                     <Card />
                 </Grid>
-                <Grid item>
+                <Grid item lg={1}>
                     <Card />
                 </Grid>
-                <Grid item>
+                <Grid item lg={1}>
                     <Card />
                 </Grid>
-                <Grid item>
+                <Grid item lg={1}>
+                    <Card />
+                </Grid>
+                <Grid item lg={1}>
                     <Card />
                 </Grid>
             </Grid>

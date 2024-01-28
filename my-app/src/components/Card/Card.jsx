@@ -1,24 +1,50 @@
-import React from "react";
-import card from "../../assets/test.jpeg"
+import React  from "react";
 import styles from "./Card.module.css"
-// import Chip from '@mui/material-next/Chip';
+import { Chip,Tooltip } from "@mui/material";
+import { Link } from "react-router-dom";
 
-export default function Card(){
-    return(
-        <>        
-            <div className={styles.wrapper}>
-            <div className={styles.main}>
-                <div >
-                    <img src={card}  className={styles.cardimg} alt="cardimg" />
-                </div>
-                <div className={styles.pill}>
-                    <p className={styles.text}>100 Follows</p> 
-                </div>
-            </div>
-            <div className={styles.abc}>
-                    <p>New Bollywood</p>
-            </div>
-            </div>
-        </>
-    )
+
+export default function Card({data,type}){
+
+    const getCard = (type)=>{
+        switch (type) {
+            case "album" : {
+                const {image, songs,slug ,follows, title} = data;
+                return(
+                    <>
+                    <Tooltip title={`${songs.length}`} placement="top" arrow>                     
+                        <Link to={`{/album/${slug}}`}>     
+                        <div className={styles.wrapper}>
+                            <div className={styles.main}>
+                                <img src={image}  className={styles.cardimg} alt="cardimg" loading="lazy" />
+                                <div className={styles.banner}>
+                                     <Chip className={styles.cardchip} label={`${follows} Follows`} size="small" />                
+                                </div>
+                            </div>           
+                                <p className={styles.abc}>{title}</p>
+                        </div>
+                        </Link>                     
+                    </Tooltip>
+                    </>
+                )
+            }
+            case "song" : {
+                const {image, likes, title} = data;
+                return(
+                <>        
+                    <div className={styles.wrapper}>
+                        <div className={styles.main}>
+                            <img src={image}  className={styles.cardimg} alt="cardimg" loading="lazy" />
+                            <Chip className={styles.cardchip} label={likes} size="small" />                
+                        </div>           
+                            <p className={styles.abc}>{title}</p>
+                    </div>
+                </>
+                )
+                }                 
+            default:
+                return <></>
+        }
+    }
+    return  getCard(type)    
 }
