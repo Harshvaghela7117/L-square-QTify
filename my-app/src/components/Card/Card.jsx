@@ -37,7 +37,7 @@ export default function Card({data,type}){
                         <div className={styles.main}>
                             <img src={image}  className={styles.cardimg} alt="cardimg" loading="lazy" />
                             <div className={styles.banner}> 
-                            <Chip className={styles.cardchip} label={likes} size="small" />                
+                            <Chip className={styles.cardchip} label={`${likes} Likes`} size="small" />                
 
                             </div>
                         </div>           
