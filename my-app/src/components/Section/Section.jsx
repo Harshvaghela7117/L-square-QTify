@@ -31,7 +31,7 @@ export default function Section ({ title , data , filterSource ,type }){
         <div>
             <div className={styles.header}>
                 <h3>{title}</h3>
-                {!showFilters && (<h4 className={styles.toggleText} onClick={handleToggle}>{!carouselToggle ? "collapseAll" : "showAll"}</h4>)}
+                {!showFilters && (<h4 className={styles.toggleText} onClick={handleToggle}>{!carouselToggle ? "collapseAll" : "ShowAll"}</h4>)}
             </div>
             {showFilters && (
                 <div className={styles.filterWrapper}>
