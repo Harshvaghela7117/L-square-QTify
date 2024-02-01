@@ -73,3 +73,8 @@ a:active{
 .swiper-slide{
   width: auto !important;
 }
+
+/* img{
+  display: block;
+  max-width: 100%;
+} */

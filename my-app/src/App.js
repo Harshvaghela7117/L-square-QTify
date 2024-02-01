@@ -35,7 +35,7 @@ const [searchData,setSearchData] = useState();
       <>
 <div>
         <Navbar />
-<Outlet context={{data:{topAlbums, newAlbums, songs}}}/>
+        <Outlet context={{data:{topAlbums, newAlbums, songs}}}/>
         </div>
       </>
   );
